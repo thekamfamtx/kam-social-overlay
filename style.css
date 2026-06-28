@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* 📦 MAIN WIDGET */
+.widget {
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 0 18px rgba(0,0,0,0.6);
+  transition: all 0.25s ease;
+}
+
+/* 📐 LAYOUT */
+.content {
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 🔥 BIG TITLE (FACEBOOK / INSTAGRAM etc) */
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+/* 📲 QR CODE */
+#qrcode img,
+#qrcode canvas {
+  width: 140px !important;
+  height: 140px !important;
+  background: white;
+  padding: 8px;
+  border-radius: 14px;
+}
+
+/* 📝 SUBTITLE */
+.subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+}
+
+/* ✨ ANIMATION */
+.fade {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.98);}
+  to {opacity: 1; transform: scale(1);}
+}
